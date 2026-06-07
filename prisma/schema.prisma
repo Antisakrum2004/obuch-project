@@ -1,12 +1,12 @@
 // Journey OS — Employee Journey Platform
-// Prisma Schema (SQLite adapted)
+// Prisma Schema (PostgreSQL — Vercel Postgres / Neon)
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
